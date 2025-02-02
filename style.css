@@ -1,0 +1,5 @@
+#Title {
+    color: purple;
+    font-size: clamp(1rem, 10vmin, 8rem);
+    text-align: center;
+}
