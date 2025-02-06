@@ -1,6 +1,14 @@
-function click(){
-    
-    window.location.replace("http://www.w3schools.com");
-    console.log("gay")
 
+function loadwindow(){
+
+    document.getElementById("navbarplaceholder").innerHTML='<object type="text/html" data="navbar.html" ></object>';
+}
+window.onload = loadwindow
+
+function aboutMeButton(){
+    window.alert("About me Button Pressed")
+}
+
+function projectsButton(){
+    window.alert("Projects Button Pressed")
 }

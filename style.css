@@ -3,3 +3,9 @@
     font-size: clamp(1rem, 10vmin, 8rem);
     text-align: center;
 }
+
+#navbar{
+    display:flex;
+    border: 10cm;
+    gap: 10px;
+}
