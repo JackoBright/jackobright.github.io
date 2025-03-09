@@ -11,4 +11,9 @@ function aboutMeButton(){
 
 function projectsButton(){
     window.alert("Projects Button Pressed")
+    window.location.replace("./projects.html")
+}
+
+function repositoriesButton(){
+    window.alert("Repositories Button Pressed")
 }
