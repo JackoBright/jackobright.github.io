@@ -2,10 +2,43 @@
     color: purple;
     font-size: clamp(1rem, 10vmin, 8rem);
     text-align: center;
+    font-weight:  bolder;
+    padding: 0px;
+    margin:50px;
+}
+body{
+    background-color: hsl(27, 90%, 80%);
 }
 
-#navbar{
-    display:flex;
-    border: 10cm;
-    gap: 10px;
+h2{
+    margin:10px
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(7, 184, 238);
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    width:fit-content;
+    border-radius: 10px;
+    
+}
+
+.navbar li a{
+    color:blue;
+    text-decoration: none;
+    font-size: larger;
+    padding:15px;
+    display:block;
+    text-align:center;
+
+    
+}
+
+.navbar a:hover{
+    color: blue;
+    background-color: aqua;
+}
+.navbar li{
+    float: left;
 }
