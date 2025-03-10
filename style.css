@@ -1,5 +1,4 @@
 #Title {
-    color: purple;
     font-size: clamp(1rem, 10vmin, 8rem);
     text-align: center;
     font-weight:  bolder;
@@ -7,7 +6,8 @@
     margin:50px;
 }
 body{
-    background-color: hsl(27, 90%, 80%);
+    background-color: #ffc2c2;
+    color: #010A43;
 }
 h1{
     text-align: center;
@@ -19,7 +19,7 @@ h2{
 }
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(7, 184, 238);
+    background-color: #FF9D9D;
     margin:0px;
     padding:0px;
     overflow:hidden;
@@ -29,7 +29,7 @@ h2{
 }
 
 .navbar li a{
-    color:blue;
+    
     text-decoration: none;
     font-size: larger;
     padding:15px;
@@ -40,8 +40,7 @@ h2{
 }
 
 .navbar a:hover{
-    color: blue;
-    background-color: aqua;
+    background-color:#FF2E63
 }
 .navbar li{
     float: left;
