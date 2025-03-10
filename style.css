@@ -9,7 +9,11 @@
 body{
     background-color: hsl(27, 90%, 80%);
 }
-
+h1{
+    text-align: center;
+    font-size: 5vw;
+    
+}
 h2{
     margin:10px
 }
@@ -42,3 +46,38 @@ h2{
 .navbar li{
     float: left;
 }
+
+.row{
+   display:flex; 
+   flex-direction:row;
+   flex-grow: 2;
+   justify-content: center;
+   column-gap:1vw;
+   margin:0px;
+}
+
+#projectsBox{
+    min-height: 100vh;
+    flex-wrap:nowrap;
+    display:flex;
+    flex-direction: column;
+    row-gap:1vw
+
+}
+.project{
+    
+    text-align: center;
+    
+    background-color: brown;
+    border-radius: 10px;
+    flex-grow:1;
+    max-width: 30vw;
+    min-width: 200px;
+    min-height: 20vh;
+    height:fit-content
+}
+
+.project-image{
+    max-width:100%
+}
+
