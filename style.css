@@ -1,5 +1,4 @@
 #Title {
-    color: purple;
     font-size: clamp(1rem, 10vmin, 8rem);
     text-align: center;
     font-weight:  bolder;
@@ -7,15 +6,20 @@
     margin:50px;
 }
 body{
-    background-color: hsl(27, 90%, 80%);
+    background-color: #ffc2c2;
+    color: #010A43;
 }
-
+h1{
+    text-align: center;
+    font-size: 5vw;
+    
+}
 h2{
     margin:10px
 }
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(7, 184, 238);
+    background-color: #FF9D9D;
     margin:0px;
     padding:0px;
     overflow:hidden;
@@ -25,7 +29,7 @@ h2{
 }
 
 .navbar li a{
-    color:blue;
+    
     text-decoration: none;
     font-size: larger;
     padding:15px;
@@ -36,9 +40,43 @@ h2{
 }
 
 .navbar a:hover{
-    color: blue;
-    background-color: aqua;
+    background-color:#FF2E63
 }
 .navbar li{
     float: left;
 }
+
+.row{
+   display:flex; 
+   flex-direction:row;
+   flex-grow: 2;
+   justify-content: center;
+   column-gap:1vw;
+   margin:0px;
+}
+
+#projectsBox{
+    min-height: 100vh;
+    flex-wrap:nowrap;
+    display:flex;
+    flex-direction: column;
+    row-gap:1vw
+
+}
+.project{
+    
+    text-align: center;
+    
+    background-color: brown;
+    border-radius: 10px;
+    flex-grow:1;
+    max-width: 30vw;
+    min-width: 200px;
+    min-height: 20vh;
+    height:fit-content
+}
+
+.project-image{
+    max-width:100%
+}
+
