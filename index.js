@@ -12,7 +12,6 @@ async function populateProjects(){
     json = await loadJSON("projects.json")
     projectsBox = document.getElementById("projectsBox")
     
-
     //calculate the number of rows
     var rows = json.length%2==1 ? json.length/2 + 1 : json.length/2
 
@@ -73,7 +72,7 @@ function loadwindow(){
     var page = path.split("/").pop();
     console.log( "Directed to " + page );
     if(page === "projects.html"){
-        populateProjects()
+        //populateProjects()
     }
 }
 window.onload = loadwindow
