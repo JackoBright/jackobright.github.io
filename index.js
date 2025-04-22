@@ -61,8 +61,21 @@ async function populateProjects(){
 }
 
 function loadprojectpage(index){
-    console.log("Redirecting to project #" + index)
-    window.location = "/projectpages/project" + index +".html"
+    const url = "../projectpages/project"+index+".html"
+    fetch(url).then(response=>{
+        if(response.ok){
+            window.location =url
+            
+        }
+        else{
+            window.alert(`${url} not found`)
+
+        }
+        
+    }
+    ).catch(error=>{
+        window.alert(error)
+    })
     
 }
 
