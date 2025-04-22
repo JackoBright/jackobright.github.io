@@ -22,10 +22,10 @@ async function populateProjects() {
   let projectsHTML = '';
   for (let i = 0; i < projects.length; i += 2) {
     const rowProjects = projects.slice(i, i + 2);
-    const rowHTML = rowProjects.map(p => `
-      <div class="project">
+    const rowHTML = rowProjects.map((p,indexinrow) => `
+      <div class="project" onClick="loadprojectpage(${i+indexinrow+1})">
         <h2>${p.title}</h2>
-        <img class="project-image" src="${p.imagePath}" alt="${p.title}"/>
+        <img class="project-image" src="../${p.imagePath}" alt="${p.title}"/>
         <p>${p.shortDesc}</p>
       </div>
     `).join('');
@@ -36,8 +36,24 @@ async function populateProjects() {
   htmlContent = htmlContent.replace('<!-- {{projects}} -->', projectsHTML);
 
   // Write the output
-  const outputPath = path.resolve(__dirname, 'projects.html');
+  const outputPath = path.resolve(__dirname,'generatedpages', 'projects.html');
   await fs.writeFile(outputPath, htmlContent, 'utf-8');
+  
+  // const singleprojectTemplatePath = path.resolve(__dirname, 'singleprojectTemplate.html')
+  // const singleprojecttemplate = await fs.readFile(singleprojectTemplatePath, 'utf-8')
+  
+  // for(let i = 0; i<projects.length; i++){
+  //   var step1 = singleprojecttemplate.replace('<!--title-->', projects[i].title)
+  //   var step2 = step1.replace('<!--shortDesc-->', projects[i].shortDesc)
+  //   var step3 = step1.replace('<!--image')
+
+  //   var filename = "project#" + i + ".html"
+  //   const outputPath = path.resolve(__dirname,'generatedpages', filename);
+  //   fs.writeFile(outputPath, step2, 'utf-8')
+
+
+  // }
+
 
   console.log('projects.html has been generated!');
 }

@@ -62,6 +62,7 @@ async function populateProjects(){
 
 function loadprojectpage(index){
     console.log("Redirecting to project #" + index)
+    window.location = "/projectpages/project" + index +".html"
     
 }
 
