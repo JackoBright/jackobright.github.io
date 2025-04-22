@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "path": "^0.12.7",
+    "require": "^2.4.20"
+  }
+}
