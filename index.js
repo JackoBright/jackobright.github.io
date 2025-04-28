@@ -61,14 +61,14 @@ async function populateProjects(){
 }
 
 function loadprojectpage(index){
+    
     const url = "../projectpages/project"+index+".html"
     fetch(url).then(response=>{
         if(response.ok){
             window.location =url
-            
         }
         else{
-            window.alert(`${url} not found`)
+            window.alert(`${url} not implemented yet`)
 
         }
         
