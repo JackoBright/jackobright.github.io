@@ -1,108 +1,136 @@
+/*Followed this YouTube tutorial to help with bettering the style on this page: 
+https://youtu.be/HXYZxVbWkjc?si=tPoyveqiuzvXPlgX*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --highlight-color: #010a43;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffc2c2;
+}
+
+a {
+  text-decoration: none;
+  color: #ff2e63;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: #ffc2c2;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar ul li a:hover {
+  color: var(--highlight-color);
+}
+
+/*Utility Classes*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-small {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 #Title {
-    font-size:xx-large;
-    text-align: center;
-    font-weight:  bolder;
-    padding: 0px;
-    margin:50px;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 0px;
+  margin: 10px;
 }
-#MainSection{
-    margin: 15px;
-    border:solid;
-    border-width: 3px;
-    height: 75%;
+#MainSection {
+  margin: 15px;
+  padding: 15px;
+  border: solid;
+  border-width: 3px;
+  height: 75%;
 }
-.button{
-    background-color: #FF2E63;
-    border: #010A43;
-    border-radius: 7px;
-}
-body{
-    background-color: #ffc2c2;
-    color: #010A43;
-}
-h1{
-    text-align: center;
-    font-size: 5vw;
-    
-}
-h2{
-    margin:10px
-}
-h3{
-    margin:5px
-}
-.navbar ul{
-    list-style-type: none;
-    background-color: #FF9D9D;
-    margin:0px;
-    padding:0px;
-    overflow:hidden;
-    width:fit-content;
-    border-radius: 10px;
-    
+.button {
+  background-color: #ff2e63;
+  border: #010a43;
+  border-radius: 7px;
 }
 
-.navbar li a{
-    
-    text-decoration: none;
-    font-size: larger;
-    padding:15px;
-    display:block;
-    text-align:center;
-
-    
+h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+h2 {
+  margin: 10px;
+}
+h3 {
+  margin: 5px;
+}
+.na .row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: self-start;
+  column-gap: 1vw;
+  margin: 0px;
 }
 
-.navbar a:hover{
-    background-color:#FF2E63
+#projectsBox {
+  min-height: 100vh;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1vw;
 }
-.navbar li{
-    float: left;
+.project {
+  text-align: center;
+
+  background-color: brown;
+  border-radius: 10px;
+  flex-grow: 1;
+  max-width: 30vw;
+  min-width: 200px;
+  min-height: 20vh;
+  height: 100%;
 }
 
-.row{
-   display:flex;
-   flex-direction:row;
-   flex-grow: 2;
-   justify-content: center;
-   align-items: self-start;
-   column-gap:1vw;
-   margin:0px;
+.project:hover {
+  background-color: rgb(181, 60, 60);
 }
 
-#projectsBox{
-    min-height: 100vh;
-    flex-wrap:nowrap;
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    row-gap:1vw;
-    
-
+.project-image {
+  max-width: 95%;
+  margin: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.project{
-    
-    text-align: center;
-    
-    background-color: brown;
-    border-radius: 10px;
-    flex-grow:1;
-    max-width: 30vw;
-    min-width: 200px;
-    min-height: 20vh;
-    height:100%;
-    
-}
-
-.project:hover{
-    
-    background-color:rgb(181, 60, 60) ;
-}
-
-.project-image{
-    max-width:95%;
-    margin:5px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-

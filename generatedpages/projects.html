@@ -1,17 +1,27 @@
 <script src="../index.js"></script>
 <script src="../projects.json"></script>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css" />
 
-<nav class = "navbar">
-    <ul>
-        <li><a href="../index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../favicon.ico" alt="logo" />
+      </a>
+    </div>
+
+    <div class="main-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../generatedpages/projects.html">Projects</a></li>
         <li><a href="../contact.html">Contact</a></li>
-    </ul>
+      </ul>
+    </div>
+  </div>
 </nav>
 <h1>Projects</h1>
 <div id="projectsBox">
-    <div class="row">
+  <div class="row">
       <div class="project" onClick="loadprojectpage(1)">
         <h2>Team Apollo</h2>
         <img class="project-image" src="../images/VRChat_2025-03-01_18-16-21.609_1920x1080.png" alt="Team Apollo"/>
@@ -45,4 +55,4 @@
       </div>
     </div>
 
-</div> 
+</div>
