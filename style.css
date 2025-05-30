@@ -1,9 +1,20 @@
 #Title {
-    font-size: clamp(1rem, 10vmin, 8rem);
+    font-size:xx-large;
     text-align: center;
     font-weight:  bolder;
     padding: 0px;
     margin:50px;
+}
+#MainSection{
+    margin: 15px;
+    border:solid;
+    border-width: 3px;
+    height: 75%;
+}
+.button{
+    background-color: #FF2E63;
+    border: #010A43;
+    border-radius: 7px;
 }
 body{
     background-color: #ffc2c2;
